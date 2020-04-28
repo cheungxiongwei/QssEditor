@@ -1,4 +1,4 @@
-// Scintilla source code edit control
+﻿// Scintilla source code edit control
 /** @file ViewStyle.h
  ** Store information on how the document is to be viewed.
  **/
@@ -26,15 +26,15 @@ public:
 
 /**
  */
-class FontNames {
+class FontNames_ {
 private:
 	std::vector<char *> names;
 
 	// Private so FontNames objects can not be copied
-	FontNames(const FontNames &);
+    FontNames_(const FontNames_ &);
 public:
-	FontNames();
-	~FontNames();
+    FontNames_();
+    ~FontNames_();
 	void Clear();
 	const char *Save(const char *name);
 };
@@ -75,7 +75,7 @@ struct ForeBackColours {
 /**
  */
 class ViewStyle {
-	FontNames fontNames;
+    FontNames_ fontNames;
 	FontMap fonts;
 public:
 	std::vector<Style> styles;

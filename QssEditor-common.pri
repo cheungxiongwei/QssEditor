@@ -26,7 +26,7 @@ win32 {
 LANGUAGES=$$replace(LANGUAGES, .ts, )
 
 CONFIG += warn_on
-QMAKE_CXXFLAGS_WARN_ON *= -Wextra
+#QMAKE_CXXFLAGS_WARN_ON *= -Wextra
 
 VERSION=$$sprintf("%1.%2.%3", $$NVER1, $$NVER2, $$NVER3)
 

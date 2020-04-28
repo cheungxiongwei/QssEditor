@@ -1,4 +1,4 @@
-// Scintilla source code edit control
+﻿// Scintilla source code edit control
 /** @file ViewStyle.cxx
  ** Store information on how the document is to be viewed.
  **/
@@ -32,21 +32,21 @@ MarginStyle::MarginStyle() :
 }
 
 // A list of the fontnames - avoids wasting space in each style
-FontNames::FontNames() {
+FontNames_::FontNames_() {
 }
 
-FontNames::~FontNames() {
+FontNames_::~FontNames_() {
 	Clear();
 }
 
-void FontNames::Clear() {
+void FontNames_::Clear() {
 	for (std::vector<char *>::const_iterator it=names.begin(); it != names.end(); ++it) {
 		delete []*it;
 	}
 	names.clear();
 }
 
-const char *FontNames::Save(const char *name) {
+const char *FontNames_::Save(const char *name) {
 	if (!name)
 		return 0;
 
