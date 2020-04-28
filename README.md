@@ -1,3 +1,17 @@
+# QssEditor
+QssEditor 是一款 Qt QSS 样式表编辑工具。
+
+### 主要特征
+* 语法智能提示
+* 实时显示效果
+
+![](images/qss%20edit.gif)
+
+### 如何运行
+下载发布版本，运行 QssEditor.exe 即可。
+
+***
+
 QssEditor
 ---------
 
